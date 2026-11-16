@@ -1,0 +1,29 @@
+.markdown-viewer { max-width: 1140px; padding: 36px 28px 64px; }
+.back-link { display: inline-block; color: #087d77; font-size: 13px; text-decoration: none; margin-bottom: 28px; }
+.viewer-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.viewer-header > div:first-child { min-width: 0; }
+.viewer-header .eyebrow { margin-bottom: 10px; }
+.viewer-path { font-size: 12px; color: #8490a1; overflow-wrap: anywhere; }
+.view-switch { display: flex; flex-shrink: 0; padding: 4px; border: 1px solid #dfe5ec; border-radius: 9px; background: #edf1f5; }
+.view-switch button { border: 0; padding: 8px 16px; border-radius: 6px; background: transparent; color: #64748b; font-size: 13px; }
+.view-switch button[aria-pressed="true"] { background: white; color: #087d77; box-shadow: 0 1px 4px #20304415; font-weight: 650; }
+.markdown-content { background: white; border: 1px solid #e0e6ed; border-radius: 12px; padding: 36px; line-height: 1.8; font-size: 14px; overflow-wrap: anywhere; overflow-x: auto; }
+.markdown-content > :first-child { margin-top: 0; }
+.markdown-content > :last-child { margin-bottom: 0; }
+.markdown-content h1 { font-size: 28px; }
+.markdown-content h2 { font-size: 23px; }
+.markdown-content h3 { font-size: 19px; }
+.markdown-content h1, .markdown-content h2 { border-bottom: 1px solid #e5eaf0; padding-bottom: 10px; }
+.markdown-content h1, .markdown-content h2, .markdown-content h3 { margin-top: 1.5em; line-height: 1.4; }
+.markdown-content a { color: #087d77; }
+.markdown-content img { max-width: 100%; height: auto; }
+.markdown-content pre { background: #f5f7fa; padding: 16px; border-radius: 8px; overflow-x: auto; line-height: 1.6; }
+.markdown-content code { font-family: ui-monospace, monospace; font-size: .9em; background: #f0f3f6; padding: 2px 5px; border-radius: 4px; }
+.markdown-content pre code { padding: 0; background: transparent; }
+.markdown-content table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 13px; }
+.markdown-content th, .markdown-content td { border: 1px solid #dfe5ec; padding: 8px 12px; text-align: left; min-width: 80px; }
+.markdown-content th { background: #f5f7fa; }
+.markdown-content blockquote { margin-inline: 0; padding: 4px 20px; border-left: 3px solid #75bdb2; color: #64748b; background: #f6faf9; }
+.markdown-content hr { border: 0; border-top: 1px solid #e0e6ed; margin: 28px 0; }
+.raw-content pre { background: transparent; padding: 0; margin: 0; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 760px) { .markdown-viewer { padding: 24px 16px; } .viewer-header { flex-direction: column; align-items: flex-start; gap: 12px; } .markdown-content { padding: 20px; } }
